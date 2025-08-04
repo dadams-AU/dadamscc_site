@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dadams.cc — LaTeX for Scholars</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -17,7 +20,7 @@
       padding: 4rem 1rem;
       background-color: var(--bs-tertiary-bg);
       border-bottom: 1px solid var(--bs-border-color);
-      text-align: center;
+      text-align: left;
     }
     .hero h1 {
       font-size: 2.75rem;
@@ -30,6 +33,17 @@
     .quote {
       font-style: italic;
       color: var(--bs-secondary-color);
+      transition: opacity 0.5s ease-in-out;
+    }
+    .quote-gallery {
+      min-height: 100px; /* To prevent layout shift */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .latex-formula {
+      margin-top: 2rem;
+      text-align: center;
     }
     footer {
       font-size: 0.875rem;
@@ -63,9 +77,18 @@
 
 <div class="container" style="padding-top: 6rem;">
   <div class="hero">
-    <h1>LaTeX Services for Serious Scholars</h1>
-    <p class="lead">Custom formatting. Clean conversions. Journal‑ready output backed by academic expertise.</p>
-    <p class="quote">“If it’s going to press, it should look like you care.”</p>
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h1>LaTeX Services for Serious Scholars</h1>
+        <p class="lead">Custom formatting. Clean conversions. Journal‑ready output backed by academic expertise.</p>
+        <div class="latex-formula">$$e^{i\pi} + 1 = 0$$</div>
+      </div>
+      <div class="col-md-5">
+        <div id="quote-gallery" class="quote-gallery">
+          <p class="quote">“If it’s going to press, it should look like you care.”</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <section id="services">
@@ -116,6 +139,38 @@
     const html = document.documentElement;
     const current = html.getAttribute('data-bs-theme');
     html.setAttribute('data-bs-theme', current === 'dark' ? 'light' : 'dark');
+  });
+
+  const quotes = [
+    "“If it’s going to press, it should look like you care.”",
+    "“The ratio of time spent reading the docs to time spent debugging is a constant.”",
+    "“Typesetting is not a science. It is an art. A dark art.”",
+    "“A semicolon is just a comma with a hernia.”"
+  ];
+  const quoteGallery = document.getElementById('quote-gallery');
+  const quoteElement = quoteGallery.querySelector('.quote');
+  let quoteIndex = 0;
+
+  function changeQuote() {
+    quoteElement.style.opacity = 0;
+    setTimeout(() => {
+      quoteIndex = (quoteIndex + 1) % quotes.length;
+      quoteElement.textContent = quotes[quoteIndex];
+      quoteElement.style.opacity = 1;
+    }, 500); // fade out duration
+  }
+
+  setInterval(changeQuote, 5000); // Change quote every 5 seconds
+
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: "$$", right: "$$", display: true},
+        {left: "$", right: "$", display: false},
+        {left: "\\(", right: "\\)", display: false},
+        {left: "\\[", right: "\\]", display: true}
+      ]
+    });
   });
 </script>
 
