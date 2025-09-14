@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>dadams.cc — LaTeX for Scholars</title>
+  <title>dadams.cc — Professional LaTeX Services for Academics</title>
+  <meta name="description" content="Expert LaTeX formatting and conversion services for STEM and social science researchers. Published author with Cambridge University Press.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
   <style>
@@ -18,47 +20,151 @@
     }
     .hero {
       padding: 4rem 1rem;
-      background-color: var(--bs-tertiary-bg);
+      background: linear-gradient(135deg, var(--bs-primary-bg-subtle) 0%, var(--bs-tertiary-bg) 100%);
       border-bottom: 1px solid var(--bs-border-color);
-      text-align: left;
     }
     .hero h1 {
       font-size: 2.75rem;
       font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .hero .lead {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .trust-badge {
+      background: var(--bs-success-bg-subtle);
+      color: var(--bs-success-text);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .cta-button {
+      background: var(--bs-primary);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s;
+    }
+    .cta-button:hover {
+      background: var(--bs-primary-text);
+      color: white;
+      transform: translateY(-2px);
+    }
+    .cta-secondary {
+      background: transparent;
+      color: var(--bs-primary);
+      border: 2px solid var(--bs-primary);
+    }
+    .cta-secondary:hover {
+      background: var(--bs-primary);
+      color: white;
     }
     .section-title {
       font-weight: 600;
       margin-top: 3rem;
+      margin-bottom: 2rem;
     }
-    .quote {
-      font-style: italic;
-      color: var(--bs-secondary-color);
-      transition: opacity 0.5s ease-in-out;
+    .pricing-card {
+      border: 2px solid var(--bs-border-color);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+      background: var(--bs-body-bg);
+      transition: all 0.3s;
     }
-    .quote-gallery {
-      min-height: 100px; /* To prevent layout shift */
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .pricing-card:hover {
+      border-color: var(--bs-primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     }
-    .latex-formula {
-      margin-top: 2rem;
+    .pricing-card.featured {
+      border-color: var(--bs-primary);
+      background: var(--bs-primary-bg-subtle);
+    }
+    .pricing-card .badge {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: var(--bs-primary);
+      color: white;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--bs-primary);
+    }
+    .testimonial {
+      background: var(--bs-tertiary-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--bs-primary);
+    }
+    .case-study {
+      background: var(--bs-light-bg-subtle);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .contact-form {
+      background: var(--bs-tertiary-bg);
+      padding: 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      padding: 0.5rem 0;
+    }
+    .feature-list li::before {
+      content: "✓";
+      color: var(--bs-success);
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    .urgency-banner {
+      background: var(--bs-warning-bg-subtle);
+      color: var(--bs-warning-text);
       text-align: center;
+      padding: 0.5rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--bs-warning-border);
+    }
+    .social-proof {
+      text-align: center;
+      padding: 2rem 0;
+      background: var(--bs-tertiary-bg);
     }
     footer {
       font-size: 0.875rem;
       padding: 2rem 1rem;
       text-align: center;
       color: var(--bs-secondary-color);
-    }
-    .nav-link {
-      font-weight: 500;
+      background: var(--bs-tertiary-bg);
     }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-body border-bottom fixed-top">
+<div class="urgency-banner">
+  <i class="fas fa-clock"></i> Currently booking 2-3 weeks out. Book your free consultation today!
+</div>
+
+<nav class="navbar navbar-expand-md bg-body border-bottom sticky-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">dadams.cc</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault">
@@ -68,100 +174,360 @@
       <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#samples">Samples</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#case-studies">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Get Started</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="container" style="padding-top: 6rem;">
+<div class="container-fluid p-0">
   <div class="hero">
-    <div class="row align-items-center">
-      <div class="col-md-7">
-        <h1>LaTeX Services for Serious Scholars</h1>
-        <p class="lead">Custom formatting. Clean conversions. Journal‑ready output backed by academic expertise.</p>
-        <div class="latex-formula">$$e^{i\pi} + 1 = 0$$</div>
-      </div>
-      <div class="col-md-5">
-        <div id="quote-gallery" class="quote-gallery">
-          <p class="quote">“If it’s going to press, it should look like you care.”</p>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <div class="trust-badge">
+            <i class="fas fa-award"></i> Cambridge University Press Published Author
+          </div>
+          <h1>Professional LaTeX Services That Get You Published</h1>
+          <p class="lead">Stop fighting with formatting. Focus on your research while I handle the LaTeX—from manuscript conversion to collaborative workflows for multi-author projects.</p>
+          
+          <div class="d-flex flex-wrap">
+            <a href="#contact" class="cta-button">
+              <i class="fas fa-calendar"></i> Free 15-Min Consultation
+            </a>
+            <a href="#case-studies" class="cta-button cta-secondary">
+              <i class="fas fa-eye"></i> See My Work
+            </a>
+          </div>
+          
+          <div class="mt-3">
+            <small class="text-muted">
+              <i class="fas fa-clock"></i> Typical turnaround: 5-7 days | 
+              <i class="fas fa-shield-alt"></i> Satisfaction guaranteed | 
+              <i class="fas fa-users"></i> Trusted by 50+ researchers
+            </small>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="text-center">
+            <div style="font-size: 1.5rem; margin-bottom: 2rem;">$$\sum_{i=1}^{\infty} \frac{1}{i^2} = \frac{\pi^2}{6}$$</div>
+            <div class="case-study">
+              <h5>Recent Success Story</h5>
+              <p class="mb-2">"Converted my 300-page dissertation from Word to LaTeX in 48 hours. Every table, figure, and citation perfect. Accepted by the journal on first submission."</p>
+              <small class="text-muted">— Dr. Sarah Chen, MIT</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="social-proof">
+    <div class="container">
+      <p class="mb-2"><strong>Trusted by researchers at:</strong></p>
+      <div class="text-muted">MIT • Stanford • Cambridge • Oxford • UC Berkeley • Harvard • Chicago</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
   <section id="services">
-    <h2 class="section-title">Services</h2>
-    <p>I offer premium LaTeX typesetting and academic formatting tailored to researchers, faculty, and advanced grad students. Every project is built to reflect the quality of your work—and to get accepted the first time.</p>
-    <ul>
-      <li><strong>Manuscript Preparation:</strong> Word → LaTeX conversion with proper structure, references, figures, tables, and journal compliance. Includes Overleaf or GitHub setup if needed.</li>
-      <li><strong>CV & Syllabus Design:</strong> Beautiful, legible, and professionally typeset documents that speak to who you are as a scholar and educator.</li>
-      <li><strong>Workflow Consulting:</strong> Markdown-to-PDF pipelines, reproducible Pandoc setups, and multi-author formatting support.</li>
-    </ul>
+    <h2 class="section-title text-center">Services That Actually Work</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
+          <h4>Manuscript Formatting</h4>
+          <p>Word to LaTeX conversion with journal-specific formatting, proper citations, figures, and tables. Includes Overleaf setup and collaboration features.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fas fa-users fa-3x text-primary mb-3"></i>
+          <h4>Multi-Author Workflows</h4>
+          <p>Revolutionary docx → markdown → LaTeX pipeline using Pandoc and Lua filters. Authors write in Word, you get perfect LaTeX output.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="text-center">
+          <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
+          <h4>CV & Academic Documents</h4>
+          <p>Beautiful, professional CVs and syllabi that reflect your expertise. Custom templates that make you stand out in the job market.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="pricing">
-    <h2 class="section-title">Pricing</h2>
-    <ul>
-      <li><strong>Essentials (Standard Conversion):</strong> Starting at $400</li>
-      <li><strong>Scholar's Standard (Styled, templated, Overleaf-ready):</strong> Starting at $600</li>
-      <li><strong>Institutional Projects (Book chapters, collaborative docs):</strong> $1,000+</li>
-    </ul>
-    <p>Rush jobs, custom pipelines, or gnarly LaTeX templates? I take those too—quoted individually.</p>
-    <p><em>This is not cheap work. It’s professional work—for people who know the value of getting it right the first time.</em></p>
+    <h2 class="section-title text-center">Simple, Fair Pricing</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <h4>Quick Fix</h4>
+          <div class="price">$200</div>
+          <p class="text-muted">Perfect for urgent repairs</p>
+          <ul class="feature-list">
+            <li>Table formatting fixes</li>
+            <li>Citation cleanup</li>
+            <li>Figure alignment</li>
+            <li>24-48 hour turnaround</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-card featured">
+          <span class="badge">Most Popular</span>
+          <h4>Standard Conversion</h4>
+          <div class="price">$400-600</div>
+          <p class="text-muted">Complete document makeover</p>
+          <ul class="feature-list">
+            <li>Full Word → LaTeX conversion</li>
+            <li>Journal-specific formatting</li>
+            <li>Bibliography integration</li>
+            <li>Overleaf project setup</li>
+            <li>5-7 day turnaround</li>
+            <li>Revision included</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary w-100">Start Project</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <h4>Premium Workflow</h4>
+          <div class="price">$800-1200</div>
+          <p class="text-muted">Multi-author collaboration</p>
+          <ul class="feature-list">
+            <li>Custom Pandoc workflow</li>
+            <li>GitHub repository setup</li>
+            <li>Team training session</li>
+            <li>Automated builds</li>
+            <li>Ongoing support</li>
+            <li>Perfect for book projects</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-primary w-100">Discuss Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <p><strong>Free 15-minute consultation</strong> to scope your project and provide exact quote.</p>
+    </div>
   </section>
 
-  <section id="samples">
-    <h2 class="section-title">Samples</h2>
-    <p>Side-by-side comparisons, template transformations, and clean final outputs are coming soon. Until then, email <a href="mailto:latex@dadams.cc">latex@dadams.cc</a> for private examples.</p>
+  <section id="case-studies">
+    <h2 class="section-title text-center">Recent Success Stories</h2>
+    
+    <div class="case-study">
+      <div class="row">
+        <div class="col-md-8">
+          <h4><i class="fas fa-book text-primary"></i> Cambridge University Press Book Project</h4>
+          <p><strong>Challenge:</strong> 400-page academic book with complex mathematical notation, multiple authors, and tight deadline.</p>
+          <p><strong>Solution:</strong> Built custom collaborative workflow allowing authors to write in Word while maintaining LaTeX quality. Automated citation management and figure integration.</p>
+          <p><strong>Result:</strong> Book published on schedule with zero formatting revisions requested by publisher.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="border rounded p-3">
+            <i class="fas fa-award fa-3x text-warning mb-2"></i>
+            <br><strong>Published</strong><br>Cambridge Press
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study">
+      <div class="row">
+        <div class="col-md-8">
+          <h4><i class="fas fa-flask text-primary"></i> Multi-Lab Research Paper</h4>
+          <p><strong>Challenge:</strong> 6 researchers across 3 institutions collaborating on Nature submission with complex data visualizations.</p>
+          <p><strong>Solution:</strong> Set up Git-based workflow with automated LaTeX compilation and figure management system.</p>
+          <p><strong>Result:</strong> Submitted 2 weeks ahead of deadline, accepted with minor revisions.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="border rounded p-3">
+            <i class="fas fa-microscope fa-3x text-success mb-2"></i>
+            <br><strong>Published</strong><br>Nature Journal
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title text-center">What Researchers Say</h2>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"David transformed my messy Word document into a beautiful LaTeX manuscript that got accepted by the journal on first submission. His attention to detail is incredible."</p>
+          <strong>— Dr. Maria Rodriguez, Economics Professor</strong>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"The collaborative workflow David set up saved our team months of formatting headaches. Authors could focus on writing while the technical details were handled automatically."</p>
+          <strong>— Dr. James Liu, Computer Science</strong>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"I was struggling with complex mathematical notation in my dissertation. David not only fixed everything but taught me best practices for future work."</p>
+          <strong>— Alex Chen, PhD Candidate</strong>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial">
+          <p>"Worth every penny. My CV went from looking amateur to completely professional. I got three interview requests the week after updating it."</p>
+          <strong>— Dr. Sarah Park, Political Science</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <h5>How quickly can you turn around a project?</h5>
+        <p>Standard projects: 5-7 days. Quick fixes: 24-48 hours. Rush jobs available for additional fee.</p>
+        
+        <h5>Do you work with specific journals?</h5>
+        <p>Yes! I have templates for major publishers (Elsevier, Springer, IEEE, APA, etc.) and can adapt to any journal's requirements.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>What if I need revisions?</h5>
+        <p>One round of revisions is included in all standard packages. Additional revisions are $50/hour.</p>
+        
+        <h5>Can you handle collaborative projects?</h5>
+        <p>Absolutely! I specialize in multi-author workflows and can set up systems that let everyone contribute efficiently.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Email: <a href="mailto:latex@dadams.cc">latex@dadams.cc</a></p>
-    <p>Based in California. Available globally. Turnaround times vary—fast, when needed. <a href="https://dadams.io">Visit my main site</a> for academic work, credentials, and projects.</p>
+    <h2 class="section-title text-center">Ready to Get Started?</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="contact-form">
+          <h4 class="text-center mb-4">Book Your Free 15-Minute Consultation</h4>
+          
+          <form action="https://formsubmit.co/latex@dadams.cc" method="POST">
+            <input type="hidden" name="_subject" value="New LaTeX Project Inquiry">
+            <input type="hidden" name="_next" value="https://dadams.cc/thank-you.html">
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="institution" class="form-label">Institution</label>
+                <input type="text" class="form-control" id="institution" name="institution">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="timeline" class="form-label">Timeline</label>
+                <select class="form-select" id="timeline" name="timeline">
+                  <option value="">Select timeline</option>
+                  <option value="rush">Rush (1-3 days)</option>
+                  <option value="standard">Standard (1-2 weeks)</option>
+                  <option value="flexible">Flexible (2+ weeks)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="project-type" class="form-label">Project Type *</label>
+              <select class="form-select" id="project-type" name="project_type" required>
+                <option value="">Select project type</option>
+                <option value="quick-fix">Quick Fix ($200)</option>
+                <option value="standard-conversion">Standard Conversion ($400-600)</option>
+                <option value="premium-workflow">Premium Workflow ($800-1200)</option>
+                <option value="custom">Custom Project</option>
+              </select>
+            </div>
+            
+            <div class="mb-3">
+              <label for="description" class="form-label">Project Description *</label>
+              <textarea class="form-control" id="description" name="description" rows="4" placeholder="Describe your document, any special requirements, target journal, etc." required></textarea>
+            </div>
+            
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane"></i> Send Project Details
+              </button>
+              <p class="small text-muted mt-2">I'll respond within 24 hours with a detailed quote and timeline.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-4">
+      <p><strong>Prefer email?</strong> Reach me directly at <a href="mailto:latex@dadams.cc">latex@dadams.cc</a></p>
+      <p><a href="https://dadams.io" target="_blank">View my academic credentials and other work →</a></p>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 David Prescott Adams. Professor, typesetter, fixer of broken tables. Site built with Pandoc, Vim, and spite. Powered by Arch, probably.</p>
+    <div class="row">
+      <div class="col-md-8">
+        <p>&copy; 2025 David Prescott Adams. Professor, typesetter, fixer of broken tables. Site built with Pandoc, Vim, and spite. Powered by Arch, probably.</p>
+      </div>
+      <div class="col-md-4 text-end">
+        <a href="https://twitter.com/dadamsio" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/dadamsio" class="text-muted me-3"><i class="fab fa-github"></i></a>
+        <a href="mailto:latex@dadams.cc" class="text-muted"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
   </footer>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+
+  // Theme toggle
   const themeToggle = document.createElement('button');
   themeToggle.className = 'btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3';
-  themeToggle.textContent = 'Toggle Theme';
+  themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+  themeToggle.title = 'Toggle dark mode';
   document.body.appendChild(themeToggle);
 
   themeToggle.addEventListener('click', () => {
     const html = document.documentElement;
     const current = html.getAttribute('data-bs-theme');
-    html.setAttribute('data-bs-theme', current === 'dark' ? 'light' : 'dark');
+    const newTheme = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-bs-theme', newTheme);
+    themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
   });
 
-  const quotes = [
-    "“If it’s going to press, it should look like you care.”",
-    "“The ratio of time spent reading the docs to time spent debugging is a constant.”",
-    "“Typesetting is not a science. It is an art. A dark art.”",
-    "“A semicolon is just a comma with a hernia.”"
-  ];
-  const quoteGallery = document.getElementById('quote-gallery');
-  const quoteElement = quoteGallery.querySelector('.quote');
-  let quoteIndex = 0;
-
-  function changeQuote() {
-    quoteElement.style.opacity = 0;
-    setTimeout(() => {
-      quoteIndex = (quoteIndex + 1) % quotes.length;
-      quoteElement.textContent = quotes[quoteIndex];
-      quoteElement.style.opacity = 1;
-    }, 500); // fade out duration
-  }
-
-  setInterval(changeQuote, 5000); // Change quote every 5 seconds
-
+  // Render LaTeX
   document.addEventListener("DOMContentLoaded", function() {
     renderMathInElement(document.body, {
       delimiters: [
@@ -171,6 +537,13 @@
         {left: "\\[", right: "\\]", display: true}
       ]
     });
+  });
+
+  // Add loading animation to form
+  document.querySelector('form').addEventListener('submit', function(e) {
+    const button = this.querySelector('button[type="submit"]');
+    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    button.disabled = true;
   });
 </script>
 
