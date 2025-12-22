@@ -5,169 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dadams.cc — Professional LaTeX Services for Academics</title>
   <meta name="description" content="Expert LaTeX formatting and conversion services for STEM and social science researchers. Published author with Cambridge University Press.">
+  <meta property="og:title" content="dadams.cc — Professional LaTeX Services for Academics">
+  <meta property="og:description" content="LaTeX formatting and conversion help for academic writing. Cambridge University Press published author. Docs → Markdown → LaTeX workflows available.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dadams.cc/">
+  <meta property="og:image" content="https://dadams.cc/dadams.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://dadams.cc/dadams.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="dadams.png" type="image/png">
+  <link rel="apple-touch-icon" href="dadams.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      line-height: 1.6;
-      background-color: var(--bs-body-bg);
-      color: var(--bs-body-color);
-    }
-    .hero {
-      padding: 4rem 1rem;
-      background: linear-gradient(135deg, var(--bs-primary-bg-subtle) 0%, var(--bs-tertiary-bg) 100%);
-      border-bottom: 1px solid var(--bs-border-color);
-    }
-    .hero h1 {
-      font-size: 2.75rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-    }
-    .hero .lead {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-    }
-    .trust-badge {
-      background: var(--bs-success-bg-subtle);
-      color: var(--bs-success-text);
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-bottom: 1rem;
-    }
-    .cta-button {
-      background: var(--bs-primary);
-      color: white;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: 600;
-      text-decoration: none;
-      display: inline-block;
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-      transition: all 0.3s;
-    }
-    .cta-button:hover {
-      background: var(--bs-primary-text);
-      color: white;
-      transform: translateY(-2px);
-    }
-    .cta-secondary {
-      background: transparent;
-      color: var(--bs-primary);
-      border: 2px solid var(--bs-primary);
-    }
-    .cta-secondary:hover {
-      background: var(--bs-primary);
-      color: white;
-    }
-    .section-title {
-      font-weight: 600;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
-    }
-    .pricing-card {
-      border: 2px solid var(--bs-border-color);
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      position: relative;
-      background: var(--bs-body-bg);
-      transition: all 0.3s;
-    }
-    .pricing-card:hover {
-      border-color: var(--bs-primary);
-      transform: translateY(-4px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-    }
-    .pricing-card.featured {
-      border-color: var(--bs-primary);
-      background: var(--bs-primary-bg-subtle);
-    }
-    .pricing-card .badge {
-      position: absolute;
-      top: -10px;
-      right: 20px;
-      background: var(--bs-primary);
-      color: white;
-    }
-    .price {
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--bs-primary);
-    }
-    .testimonial {
-      background: var(--bs-tertiary-bg);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      border-left: 4px solid var(--bs-primary);
-    }
-    .case-study {
-      background: var(--bs-light-bg-subtle);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-    }
-    .contact-form {
-      background: var(--bs-tertiary-bg);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-    }
-    .feature-list {
-      list-style: none;
-      padding: 0;
-    }
-    .feature-list li {
-      padding: 0.5rem 0;
-    }
-    .feature-list li::before {
-      content: "✓";
-      color: var(--bs-success);
-      font-weight: bold;
-      margin-right: 0.5rem;
-    }
-    .urgency-banner {
-      background: var(--bs-warning-bg-subtle);
-      color: var(--bs-warning-text);
-      text-align: center;
-      padding: 0.5rem;
-      font-weight: 600;
-      border-bottom: 1px solid var(--bs-warning-border);
-    }
-    .social-proof {
-      text-align: center;
-      padding: 2rem 0;
-      background: var(--bs-tertiary-bg);
-    }
-    footer {
-      font-size: 0.875rem;
-      padding: 2rem 1rem;
-      text-align: center;
-      color: var(--bs-secondary-color);
-      background: var(--bs-tertiary-bg);
-    }
-  </style>
 </head>
 <body>
 
-<div class="urgency-banner">
-  <i class="fas fa-clock"></i> Currently booking 2-3 weeks out. Book your free consultation today!
-</div>
-
 <nav class="navbar navbar-expand-md bg-body border-bottom sticky-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">dadams.cc</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#" aria-label="dadams.cc home">
+      <img src="dadams.png" alt="dadams logo" class="brand-logo">
+      <span>dadams.cc</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
@@ -175,7 +39,6 @@
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
         <li class="nav-item"><a class="nav-link" href="#case-studies">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Get Started</a></li>
       </ul>
     </div>
@@ -204,19 +67,23 @@
           
           <div class="mt-3">
             <small class="text-muted">
-              <i class="fas fa-clock"></i> Typical turnaround: 5-7 days | 
-              <i class="fas fa-shield-alt"></i> Satisfaction guaranteed | 
-              <i class="fas fa-users"></i> Trusted by 50+ researchers
+              <i class="fas fa-clock"></i> Typical turnaround: 5–7 days |
+              <i class="fas fa-file-signature"></i> Clear scope + fixed quote |
+              <i class="fas fa-comments"></i> Fast, direct communication
             </small>
           </div>
         </div>
         <div class="col-md-5">
           <div class="text-center">
-            <div style="font-size: 1.5rem; margin-bottom: 2rem;">$$\sum_{i=1}^{\infty} \frac{1}{i^2} = \frac{\pi^2}{6}$$</div>
-            <div class="case-study">
-              <h5>Recent Success Story</h5>
-              <p class="mb-2">"Converted my 300-page dissertation from Word to LaTeX in 48 hours. Every table, figure, and citation perfect. Accepted by the journal on first submission."</p>
-              <small class="text-muted">— Dr. Sarah Chen, MIT</small>
+            <div class="hero-math">$$\sum_{i=1}^{\infty} \frac{1}{i^2} = \frac{\pi^2}{6}$$</div>
+            <div class="case-study text-start">
+              <h5 class="mb-2">What you’re hiring me for</h5>
+              <ul class="feature-list">
+                <li>Clean, journal-ready LaTeX (tables, figures, references)</li>
+                <li>Word → LaTeX conversion with reproducible builds</li>
+                <li>Docs → Markdown → LaTeX workflow (Pandoc + Lua filters)</li>
+                <li>Light copyedits only (small fixes), not substantive editing</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -224,10 +91,10 @@
     </div>
   </div>
 
-  <div class="social-proof">
+  <div class="highlight-strip">
     <div class="container">
-      <p class="mb-2"><strong>Trusted by researchers at:</strong></p>
-      <div class="text-muted">MIT • Stanford • Cambridge • Oxford • UC Berkeley • Harvard • Chicago</div>
+      <p class="mb-1"><strong>Practical, production-focused LaTeX help</strong></p>
+      <div class="text-muted">Fast scoping • Clean deliverables • Reproducible workflow</div>
     </div>
   </div>
 </div>
@@ -247,7 +114,7 @@
         <div class="text-center">
           <i class="fas fa-users fa-3x text-primary mb-3"></i>
           <h4>Multi-Author Workflows</h4>
-          <p>Revolutionary docx → markdown → LaTeX pipeline using Pandoc and Lua filters. Authors write in Word, you get perfect LaTeX output.</p>
+          <p>Docs → Markdown → LaTeX pipeline using Pandoc and Lua filters. Authors write in Word; you get clean LaTeX output with a repeatable build.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
@@ -318,15 +185,15 @@
   </section>
 
   <section id="case-studies">
-    <h2 class="section-title text-center">Recent Success Stories</h2>
+    <h2 class="section-title text-center">Selected Work</h2>
     
     <div class="case-study">
       <div class="row">
         <div class="col-md-8">
-          <h4><i class="fas fa-book text-primary"></i> Cambridge University Press Book Project</h4>
-          <p><strong>Challenge:</strong> 400-page academic book with complex mathematical notation, multiple authors, and tight deadline.</p>
-          <p><strong>Solution:</strong> Built custom collaborative workflow allowing authors to write in Word while maintaining LaTeX quality. Automated citation management and figure integration.</p>
-          <p><strong>Result:</strong> Book published on schedule with zero formatting revisions requested by publisher.</p>
+          <h4><i class="fas fa-book text-primary"></i> Cambridge University Press book (author)</h4>
+          <p><strong>What’s real here:</strong> I wrote a Cambridge University Press book and handled the LaTeX production work for it.</p>
+          <p><strong>What I offer clients:</strong> the same production discipline—clean sources, consistent styling, and predictable builds.</p>
+          <p class="mb-0"><strong>Editing note:</strong> I do small copyedits (typos/consistency), but I’m not selling substantive copyediting services.</p>
         </div>
         <div class="col-md-4 text-center">
           <div class="border rounded p-3">
@@ -340,50 +207,16 @@
     <div class="case-study">
       <div class="row">
         <div class="col-md-8">
-          <h4><i class="fas fa-flask text-primary"></i> Multi-Lab Research Paper</h4>
-          <p><strong>Challenge:</strong> 6 researchers across 3 institutions collaborating on Nature submission with complex data visualizations.</p>
-          <p><strong>Solution:</strong> Set up Git-based workflow with automated LaTeX compilation and figure management system.</p>
-          <p><strong>Result:</strong> Submitted 2 weeks ahead of deadline, accepted with minor revisions.</p>
+          <h4><i class="fas fa-code-branch text-primary"></i> Docs → Markdown → LaTeX workflow</h4>
+          <p><strong>Goal:</strong> Let authors work in Word while generating consistent LaTeX output.</p>
+          <p><strong>Approach:</strong> Pandoc conversion plus Lua filters, with an automated build so output stays reproducible over time.</p>
+          <p class="mb-0"><strong>Outcome:</strong> Cleaner collaboration and fewer last-minute formatting fires.</p>
         </div>
         <div class="col-md-4 text-center">
           <div class="border rounded p-3">
-            <i class="fas fa-microscope fa-3x text-success mb-2"></i>
-            <br><strong>Published</strong><br>Nature Journal
+            <i class="fas fa-cogs fa-3x text-success mb-2"></i>
+            <br><strong>Workflow</strong><br>Reproducible builds
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="testimonials">
-    <h2 class="section-title text-center">What Researchers Say</h2>
-    
-    <div class="row">
-      <div class="col-md-6">
-        <div class="testimonial">
-          <p>"David transformed my messy Word document into a beautiful LaTeX manuscript that got accepted by the journal on first submission. His attention to detail is incredible."</p>
-          <strong>— Dr. Maria Rodriguez, Economics Professor</strong>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="testimonial">
-          <p>"The collaborative workflow David set up saved our team months of formatting headaches. Authors could focus on writing while the technical details were handled automatically."</p>
-          <strong>— Dr. James Liu, Computer Science</strong>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-md-6">
-        <div class="testimonial">
-          <p>"I was struggling with complex mathematical notation in my dissertation. David not only fixed everything but taught me best practices for future work."</p>
-          <strong>— Alex Chen, PhD Candidate</strong>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="testimonial">
-          <p>"Worth every penny. My CV went from looking amateur to completely professional. I got three interview requests the week after updating it."</p>
-          <strong>— Dr. Sarah Park, Political Science</strong>
         </div>
       </div>
     </div>
@@ -478,19 +311,19 @@
     
     <div class="text-center mt-4">
       <p><strong>Prefer email?</strong> Reach me directly at <a href="mailto:latex@dadams.cc">latex@dadams.cc</a></p>
-      <p><a href="https://dadams.io" target="_blank">View my academic credentials and other work →</a></p>
+      <p><a href="https://dadams.io" target="_blank" rel="noopener noreferrer">View my academic credentials and other work →</a></p>
     </div>
   </section>
 
   <footer>
     <div class="row">
       <div class="col-md-8">
-        <p>&copy; 2025 David Prescott Adams. Professor, typesetter, fixer of broken tables. Site built with Pandoc, Vim, and spite. Powered by Arch, probably.</p>
+        <p class="mb-0">&copy; 2025 David Prescott Adams. LaTeX services for academics.</p>
       </div>
       <div class="col-md-4 text-end">
-        <a href="https://twitter.com/dadamsio" class="text-muted me-3"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/dadamsio" class="text-muted me-3"><i class="fab fa-github"></i></a>
-        <a href="mailto:latex@dadams.cc" class="text-muted"><i class="fas fa-envelope"></i></a>
+        <a href="https://twitter.com/dadamsio" class="text-muted me-3" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="https://github.com/dadamsio" class="text-muted me-3" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:latex@dadams.cc" class="text-muted" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
       </div>
     </div>
   </footer>
@@ -510,21 +343,6 @@
         });
       }
     });
-  });
-
-  // Theme toggle
-  const themeToggle = document.createElement('button');
-  themeToggle.className = 'btn btn-sm btn-outline-secondary position-fixed bottom-0 end-0 m-3';
-  themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-  themeToggle.title = 'Toggle dark mode';
-  document.body.appendChild(themeToggle);
-
-  themeToggle.addEventListener('click', () => {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-bs-theme');
-    const newTheme = current === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-bs-theme', newTheme);
-    themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
   });
 
   // Render LaTeX
