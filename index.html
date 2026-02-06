@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="auto">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,20 @@
   <meta name="twitter:title" content="LaTeX Services for Academics — dadams.cc">
   <meta name="twitter:description" content="LaTeX conversion, formatting, and workflows for academic writing. Cambridge University Press author.">
   <meta name="twitter:image" content="https://dadams.cc/dadams.png">
+  <script>
+    (function() {
+      const mq = window.matchMedia('(prefers-color-scheme: dark)');
+      const setTheme = (isDark) => {
+        document.documentElement.setAttribute('data-bs-theme', isDark ? 'dark' : 'light');
+      };
+      setTheme(mq.matches);
+      if (mq.addEventListener) {
+        mq.addEventListener('change', (e) => setTheme(e.matches));
+      } else if (mq.addListener) {
+        mq.addListener((e) => setTheme(e.matches));
+      }
+    })();
+  </script>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="dadams.png" type="image/png">
   <link rel="apple-touch-icon" href="dadams.png">
@@ -88,6 +102,7 @@
               <h5 class="mb-2">What you’re hiring me for</h5>
               <ul class="feature-list">
                 <li>Clean, journal-ready LaTeX (tables, figures, references)</li>
+                <li>TikZ diagrams and figure cleanup</li>
                 <li>Word → LaTeX conversion with reproducible builds</li>
                 <li>Docs → Markdown → LaTeX workflow (Pandoc + Lua filters)</li>
                 <li>Light copyedits only (small fixes), not substantive editing</li>
@@ -115,7 +130,7 @@
         <div class="text-center">
           <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
           <h4>Manuscript Formatting</h4>
-          <p>Word to LaTeX conversion with journal-specific formatting, proper citations, figures, and tables. Includes Overleaf setup and collaboration features.</p>
+          <p>Word to LaTeX conversion with journal-specific formatting, proper citations, figures, tables, and TikZ diagrams. Includes Overleaf setup and collaboration features.</p>
         </div>
       </div>
       <div class="col-md-4 mb-4">
@@ -136,7 +151,7 @@
   </section>
 
   <section id="pricing">
-    <h2 class="section-title text-center">Packages <small class="text-muted">(most clients choose the middle)</small></h2>
+    <h2 class="section-title text-center">Packages</h2>
     <div class="row">
       <div class="col-md-4">
         <div class="pricing-card">
@@ -208,7 +223,7 @@
       </div>
     </div>
     
-    <div class="cta-section mt-5 p-4 bg-light rounded">
+    <div class="cta-section mt-5 p-4 rounded">
       <h3 class="text-center mb-3">Get a quote (fast)</h3>
       <div class="text-center">
         <p class="mb-3">Email <a href="mailto:latex@dadams.cc" class="fw-bold text-primary">latex@dadams.cc</a> with: (1) your source file (Word/Docx/Google Doc export), (2) the target journal/template (if any), and (3) your deadline. I'll reply with a quote and a realistic turnaround window.</p>
