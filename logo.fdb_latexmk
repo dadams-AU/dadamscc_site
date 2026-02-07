@@ -1,8 +1,8 @@
 # Fdb version 4
-["lualatex"] 1770434202.84165 "/home/dadams/Repos/dadamscc_site/logo.tex" "logo.pdf" "logo" 1770434203.45782 0
+["lualatex"] 1770434825.75047 "/home/dadams/Repos/dadamscc_site/logo.tex" "logo.pdf" "logo" 1770434826.34318 0
   "/home/dadams/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1760845804.11713 127327 1c39dfa079191ba7430719f0296074a7 ""
   "/home/dadams/.texlive2025/texmf-var/luatex-cache/generic/names/luaotfload-names.luc.gz" 1764391348.0695 445591 7a797ad7ee531edb13d09651f81f0eaa ""
-  "/home/dadams/Repos/dadamscc_site/logo.tex" 1770434202.65684 671 1697ac02b1cb058d0fb9c3c208252ae2 ""
+  "/home/dadams/Repos/dadamscc_site/logo.tex" 1770434825.5624 416 7c70b7dc69fe08abae9867ba4cfe4ce7 ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty" 1572645307 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty" 1734129479 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -149,8 +149,8 @@
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/luaotfload/luaotfload-unicode.lua" 1740687098 7918 4272855a25780b80472f3b58edd95e33 ""
   "/usr/local/texlive/2025/texmf-dist/tex/luatex/luaotfload/luaotfload.lua" 1740687098 13566 16df94dd2de231b2bca0aaa0190941fe ""
   "/usr/local/texlive/2025/texmf-var/web2c/luahbtex/lualatex.fmt" 1759696136 5632565 3b179dbf26905526fc3a95af3aafd1ba ""
-  "logo.aux" 1770434203.41819 32 3985256e7290058c681f74d7a3565a19 "lualatex"
-  "logo.tex" 1770434202.65684 671 1697ac02b1cb058d0fb9c3c208252ae2 ""
+  "logo.aux" 1770434826.30241 32 3985256e7290058c681f74d7a3565a19 "lualatex"
+  "logo.tex" 1770434825.5624 416 7c70b7dc69fe08abae9867ba4cfe4ce7 ""
   (generated)
   "logo.aux"
   "logo.log"
