@@ -240,6 +240,7 @@ footer a:hover {
   border-top: 1px solid var(--bs-border-color);
   border-bottom: 1px solid var(--bs-border-color);
   padding: 1.25rem 1rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
