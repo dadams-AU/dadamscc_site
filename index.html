@@ -163,55 +163,70 @@
     <h2 class="section-title text-center">Pricing</h2>
     <p class="text-center text-muted mb-4">Single-project pricing with clear scope. Every tier includes at least one revision round.</p>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <div class="pricing-card">
+          <h4>Single Document</h4>
+          <div class="price">$150</div>
+          <p class="text-muted">CV, syllabus, or short paper</p>
+          <ul class="feature-list">
+            <li>One document converted to clean LaTeX</li>
+            <li>Up to 15 pages</li>
+            <li>Up to 3 figures or tables</li>
+            <li>References set up in standard format</li>
+            <li>One round of revisions</li>
+            <li>Turnaround: 3–5 days</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
+        </div>
+      </div>
+      <div class="col-md-3">
         <div class="pricing-card">
           <h4>Standard Article</h4>
-          <div class="price">$450</div>
-          <p class="text-muted">For CVs, syllabi, and short manuscripts</p>
+          <div class="price">$300</div>
+          <p class="text-muted">Short to mid-length manuscripts</p>
           <ul class="feature-list">
             <li>Word/Google Doc → LaTeX (clean and formatted)</li>
-            <li>Up to 25 manuscript pages, or equivalent short academic docs</li>
+            <li>Up to 25 pages</li>
             <li>6 figures, 4 tables (or fewer)</li>
             <li>References set up in standard format</li>
-            <li>Includes one short CV or syllabus template refresh</li>
             <li>One round of revisions</li>
             <li>Turnaround: 5–7 days</li>
           </ul>
           <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="pricing-card featured">
-          <span class="badge">Most Popular</span>
+          <span class="badge">Most Common</span>
           <h4>Journal Submission</h4>
-          <div class="price">$750</div>
-          <p class="text-muted">Best for full manuscripts and conference decks</p>
+          <div class="price">$500</div>
+          <p class="text-muted">Full manuscripts and conference decks</p>
           <ul class="feature-list">
             <li>Everything in Standard, plus:</li>
             <li>Up to 40 pages, 10 figures, 8 tables</li>
-            <li>Journal template compliance (whatever format they want)</li>
-            <li>Reference style tuning (complex bibliographies welcome)</li>
+            <li>Journal template compliance</li>
+            <li>Reference style tuning</li>
             <li>Figure and table polishing</li>
-            <li>Beamer presentation build or cleanup (up to 35 slides)</li>
-            <li>Overleaf or GitHub setup (so you can update it)</li>
+            <li>Beamer presentation (up to 35 slides)</li>
+            <li>Overleaf or GitHub setup</li>
             <li>One round of revisions</li>
           </ul>
           <a href="#contact" class="btn btn-primary w-100">Start Project</a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="pricing-card">
-          <h4>Complex Projects / Book-Chapter Rescue</h4>
-          <div class="price">$1,000+</div>
-          <p class="text-muted">Large or high-complexity academic projects</p>
+          <h4>Complex / Book-Chapter Rescue</h4>
+          <div class="price">$750+</div>
+          <p class="text-muted">Large or high-complexity projects</p>
           <ul class="feature-list">
-            <li>50+ pages, complex multi-chapter work</li>
-            <li>Heavy figures/tables (no surprises pricing)</li>
-            <li>Template wrestling (difficult publishers welcome)</li>
-            <li>Large Beamer decks, CV suites, or multi-document syllabus sets</li>
-            <li>Up to 3 revision rounds (within 14 days)</li>
-            <li>Custom setup for your workflow</li>
-            <li><strong>Let's chat about your specific situation first</strong></li>
+            <li>50+ pages, multi-chapter work</li>
+            <li>Heavy figures/tables</li>
+            <li>Difficult publisher templates</li>
+            <li>Large Beamer decks or multi-doc sets</li>
+            <li>Up to 3 revision rounds</li>
+            <li>Custom workflow setup</li>
+            <li><strong>Let's talk scope first</strong></li>
           </ul>
           <a href="#contact" class="btn btn-outline-primary w-100">Discuss Project</a>
         </div>
@@ -368,9 +383,10 @@
               <label for="project-type" class="form-label">Project Type *</label>
               <select class="form-select" id="project-type" name="project_type" required>
                 <option value="">Select project type</option>
-              <option value="standard">Standard Article ($450)</option>
-              <option value="journal">Journal Submission ($750)</option>
-              <option value="complex">Complex Projects / Book-Chapter Rescue ($1,000+)</option>
+                <option value="single">Single Document — CV, syllabus, short paper ($150)</option>
+                <option value="standard">Standard Article ($300)</option>
+                <option value="journal">Journal Submission ($500)</option>
+                <option value="complex">Complex / Book-Chapter Rescue ($750+)</option>
                 <option value="custom">Custom Project</option>
               </select>
             </div>
