@@ -1,8 +1,8 @@
-# dadams.cc
+# latex.dadams.io
 
 Professional LaTeX conversion services by David Adams.
 
-This is the static website for [https://dadams.cc](https://dadams.cc), offering:
+This is the static website for [https://latex.dadams.io](https://latex.dadams.io), offering:
 
 - Word → LaTeX manuscript formatting
 - Academic CV and syllabus templates

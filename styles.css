@@ -1,7 +1,21 @@
 /* Site-specific styling layered on top of Bootstrap */
+/* Color palette aligned with dadams.io */
+:root {
+  --brand-blue: #2563eb;
+  --brand-blue-dark: #1d4ed8;
+  --brand-blue-light: #3b82f6;
+  --brand-green: #059669;
+  --brand-green-light: #10b981;
+
+  /* Override Bootstrap primary to use brand blue */
+  --bs-primary: #2563eb;
+  --bs-primary-rgb: 37, 99, 235;
+  --bs-link-color: #2563eb;
+  --bs-link-hover-color: #1d4ed8;
+}
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Google Sans Flex', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.65;
   background-color: var(--bs-body-bg);
   color: var(--bs-body-color);
@@ -20,8 +34,8 @@ body {
   padding: 4rem 1rem;
   background: linear-gradient(
     135deg,
-    var(--bs-primary-bg-subtle) 0%,
-    var(--bs-tertiary-bg) 100%
+    rgba(37, 99, 235, 0.08) 0%,
+    rgba(5, 150, 105, 0.06) 100%
   );
   border-bottom: 1px solid var(--bs-border-color);
 }
@@ -155,7 +169,7 @@ body {
 
 .feature-list li::before {
   content: "✓";
-  color: var(--bs-success);
+  color: var(--brand-green);
   font-weight: 800;
   margin-right: 0.5rem;
 }
@@ -177,7 +191,19 @@ footer {
   padding: 2rem 1rem;
   color: var(--bs-secondary-color);
   background: var(--bs-tertiary-bg);
-  border-top: 1px solid var(--bs-border-color);
+  border-top: none;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--brand-green), var(--brand-blue));
+  opacity: 0.8;
 }
 
 footer a {
@@ -186,4 +212,33 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--bs-border-color);
+  display: block;
+  margin: 0 auto;
+}
+
+.sample-card {
+  border: 2px solid var(--bs-border-color);
+  border-radius: 14px;
+  padding: 1.5rem;
+  height: 100%;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  color: var(--bs-body-color);
+  background: var(--bs-body-bg);
+  display: block;
+}
+
+.sample-card:hover {
+  border-color: var(--brand-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+  color: var(--bs-body-color);
+  text-decoration: none;
 }
