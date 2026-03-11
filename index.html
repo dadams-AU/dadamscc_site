@@ -16,6 +16,44 @@
   <meta name="twitter:title" content="Academic LaTeX Services — latex.dadams.io">
   <meta name="twitter:description" content="Convert, format, submit. With clear code you can maintain yourself. No black box. No shame. Just good work.">
   <meta name="twitter:image" content="https://latex.dadams.io/dadams.png">
+  <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1e293b" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://latex.dadams.io/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Academic LaTeX Services",
+    "url": "https://latex.dadams.io/",
+    "description": "Professional LaTeX typesetting for academic manuscripts, Beamer presentations, CVs, and syllabi by an active faculty researcher.",
+    "provider": {
+      "@type": "Person",
+      "name": "David P. Adams",
+      "jobTitle": "Associate Professor of Public Administration",
+      "affiliation": "California State University, Fullerton",
+      "sameAs": [
+        "https://dadams.io",
+        "https://twitter.com/dadamsAU",
+        "https://www.linkedin.com/in/dadamscsuf",
+        "https://github.com/dadams-AU"
+      ]
+    },
+    "areaServed": "Worldwide",
+    "priceRange": "$150–$750+",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "latex@dadams.io",
+      "contactType": "customer service"
+    },
+    "offers": [
+      { "@type": "Offer", "name": "Single Document",    "price": "150", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Standard Article",   "price": "300", "priceCurrency": "USD" },
+      { "@type": "Offer", "name": "Journal Submission", "price": "500", "priceCurrency": "USD" }
+    ]
+  }
+  </script>
+
   <script>
     (function() {
       const mq = window.matchMedia('(prefers-color-scheme: dark)');
@@ -30,23 +68,49 @@
       }
     })();
   </script>
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="dadams.png" type="image/png">
   <link rel="apple-touch-icon" href="dadams.png">
+
+  <!-- Preconnect to CDN origins -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Non-blocking Google Fonts load -->
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap">
+  </noscript>
+
+  <!-- Font Awesome with SRI -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
   <link rel="stylesheet" href="styles.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-md bg-body border-bottom sticky-top">
+<!-- Skip navigation for keyboard/screen reader users -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<nav class="navbar navbar-expand-md bg-body border-bottom sticky-top" aria-label="Site navigation">
   <div class="container">
     <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#" aria-label="latex.dadams.io home">
-      <img src="dadams.png" alt="dadams logo" class="brand-logo">
+      <img src="dadams.png" alt="" role="presentation" class="brand-logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -55,52 +119,55 @@
       <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-        <li class="nav-item"><a class="nav-link" href="#case-studies">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#case-studies">Samples</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Get Started</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
+<main id="main-content">
+
 <div class="container-fluid p-0">
   <div class="hero">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-7">
-          <h1>Academic LaTeX Services for Scholarly Work</h1>
+          <span class="trust-badge">Associate Professor · Ph.D. · Cambridge University Press Author</span>
+          <h1>Stop Fighting Your LaTeX Template. Get Back to Your Research.</h1>
           <p class="lead">Manuscripts, Beamer slides, CVs, and syllabi: clean, professional LaTeX deliverables for academic work. I handle the technical layer so you can stay focused on the scholarship.</p>
-          
+
           <div class="mt-3 mb-4">
             <p class="mb-2"><strong>Email your files, deadline, and questions to <a href="mailto:latex@dadams.io" class="text-primary">latex@dadams.io</a>. You'll get a real quote—no surprises.</strong></p>
           </div>
-          
-          <div class="d-flex flex-wrap">
+
+          <div class="d-flex flex-wrap hero-cta-row">
             <a href="#contact" class="cta-button">
-              <i class="fas fa-calendar"></i> Free 15-Min Consultation
+              <i class="fas fa-file-invoice" aria-hidden="true"></i> Get a Free Quote
             </a>
             <a href="#case-studies" class="cta-button cta-secondary">
-              <i class="fas fa-eye"></i> See My Work
+              <i class="fas fa-eye" aria-hidden="true"></i> See Sample Work
             </a>
           </div>
-          
+
           <div class="mt-3">
             <small class="text-muted">
-              <i class="fas fa-clock"></i> Typical turnaround: 5–7 days |
-              <i class="fas fa-file-signature"></i> Clear scope + fixed quote |
-              <i class="fas fa-comments"></i> Fast, direct communication
+              <i class="fas fa-clock" aria-hidden="true"></i> Typical turnaround: 5–7 days &nbsp;|&nbsp;
+              <i class="fas fa-file-signature" aria-hidden="true"></i> Clear scope + fixed quote &nbsp;|&nbsp;
+              <i class="fas fa-comments" aria-hidden="true"></i> Fast, direct communication
             </small>
           </div>
         </div>
         <div class="col-md-5">
           <div class="text-center">
-            <div class="hero-math">$$\sum_{i=1}^{\infty} \frac{1}{i^2} = \frac{\pi^2}{6}$$</div>
+            <div class="hero-math" role="img" aria-label="Example LaTeX formula: the Basel problem, the sum from i equals 1 to infinity of 1 over i squared equals pi squared over 6">$$\sum_{i=1}^{\infty} \frac{1}{i^2} = \frac{\pi^2}{6}$$</div>
             <div class="case-study text-start">
-              <h5 class="mb-2">What you’re hiring me for</h5>
+              <h2 class="h5 mb-2">What you're hiring me for</h2>
               <ul class="feature-list">
                 <li>Manuscript formatting with clean references, tables, and figures</li>
                 <li>Beamer presentations with consistent structure and styling</li>
                 <li>CV and syllabus templates that are polished and maintainable</li>
-                <li>Word/Docs to LaTeX workflows with reproducible builds</li>
+                <li>Multi-author Word → LaTeX pipelines — co-authors stay in Word</li>
               </ul>
             </div>
           </div>
@@ -111,8 +178,8 @@
 
   <div class="highlight-strip">
     <div class="container">
-      <p class="mb-1"><strong>Practical, production-focused academic document support</strong></p>
-      <div class="text-muted">Clear scoping • Clean deliverables • Reproducible workflow</div>
+      <p class="mb-1"><strong>Every file I deliver is fully commented — so you understand it, own it, and can update it yourself.</strong></p>
+      <div class="text-muted">Clear scoping • Clean deliverables • Reproducible workflow • No vendor lock-in</div>
     </div>
   </div>
 </div>
@@ -120,25 +187,25 @@
 <div class="container">
   <section id="services">
     <h2 class="section-title text-center">Services That Actually Work</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="text-center">
-          <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
-          <h4>Manuscript & Journal Formatting</h4>
-          <p>Word/Docs to submission-ready LaTeX with journal-specific formatting, citations, figures, and tables. Includes Overleaf setup and collaboration support.</p>
+    <div class="row g-4">
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="fas fa-file-alt fa-3x text-primary mb-3" aria-hidden="true"></i>
+          <h3 class="h4">Manuscript &amp; Journal Formatting</h3>
+          <p>Word/Docs to submission-ready LaTeX with journal-specific formatting, citations, figures, and tables. Custom multi-author pipelines available — co-authors stay in Word while you publish in LaTeX. Includes Overleaf setup and collaboration support.</p>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="text-center">
-          <i class="fas fa-users fa-3x text-primary mb-3"></i>
-          <h4>Beamer Presentations</h4>
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="fas fa-chalkboard fa-3x text-primary mb-3" aria-hidden="true"></i>
+          <h3 class="h4">Beamer Presentations</h3>
           <p>Conference-ready slides with consistent styling, clean figure handling, and citations that stay stable across revisions.</p>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-        <div class="text-center">
-          <i class="fas fa-graduation-cap fa-3x text-primary mb-3"></i>
-          <h4>Academic Documents</h4>
+      <div class="col-md-4 d-flex">
+        <div class="service-card">
+          <i class="fas fa-graduation-cap fa-3x text-primary mb-3" aria-hidden="true"></i>
+          <h3 class="h4">Academic Documents</h3>
           <p>CVs and syllabi in polished, maintainable LaTeX templates that are easy to update term after term.</p>
         </div>
       </div>
@@ -152,7 +219,7 @@
       </div>
       <div class="col-md">
         <h2 class="section-title mb-2">Who's doing the work</h2>
-        <p>I'm David Adams — Associate Professor of Public Administration at Cal State Fullerton, Ph.D. from Auburn University, and a Cambridge University Press author. I've been writing LaTeX since grad school and have taken manuscripts through the full pipeline: drafting, co-author chaos, journal template wrestling, reviewer revisions, and final proofs. I know what editors and reviewers actually look at, and I know what breaks at submission time.</p>
+        <p>I'm David Adams — Associate Professor of Public Administration at Cal State Fullerton, Ph.D. from Auburn University, and a <strong>Cambridge University Press author</strong>. I've been writing LaTeX since grad school and have taken manuscripts through the full pipeline: drafting, co-author chaos, journal template wrestling, reviewer revisions, and final proofs. I know what editors and reviewers actually look at, and I know what breaks at submission time.</p>
         <p>I take on select projects because academic formatting shouldn't be the thing standing between good work and publication. Every deliverable is clean, well-commented code you can maintain yourself — not a black box you have to come back to me for.</p>
         <a href="https://dadams.io" class="btn btn-outline-secondary btn-sm mt-1">Full academic profile →</a>
       </div>
@@ -163,7 +230,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-1 text-center d-none d-md-block">
-          <i class="fas fa-code fa-2x" style="color: var(--brand-green);"></i>
+          <i class="fas fa-code fa-2x commented-code-icon" aria-hidden="true"></i>
         </div>
         <div class="col-md-8">
           <strong>Every file I deliver is fully commented.</strong> Not just what the code does — but why. You'll be able to open it, understand it, and update it yourself. If you want to learn LaTeX from a working example, that's the point. Most services keep you dependent on them. I'd rather you not need me again.
@@ -175,13 +242,84 @@
     </div>
   </div>
 
+  <div class="collab-callout">
+    <div class="row align-items-center g-3">
+      <div class="col-md-auto text-center d-none d-md-block">
+        <i class="fas fa-people-group fa-2x collab-callout-icon" aria-hidden="true"></i>
+      </div>
+      <div class="col-md">
+        <strong>Co-authors who don't use LaTeX? I've solved that.</strong> For a Cambridge University Press book, I built a Word → Markdown → LaTeX pipeline using Pandoc and custom Lua filters. Eight co-authored chapters, everyone writing in Word — including heading structures and index tags — converting cleanly to production-ready LaTeX. Nobody had to open a <code>.tex</code> file. If your collaborators live in Word or Google Docs, we can build a workflow around how they actually work.
+      </div>
+      <div class="col-md-auto mt-2 mt-md-0">
+        <a href="#contact" class="btn btn-outline-secondary btn-sm">Talk workflow →</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="case-studies">
+    <h2 class="section-title text-center">Sample Work</h2>
+    <p class="text-center text-muted mb-1">These are my own academic documents. Click any to open the PDF.</p>
+    <p class="text-center text-muted small mb-4" id="pdf-notice">All links open PDF files in a new tab.</p>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <a href="samples/manuscript.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none" aria-describedby="pdf-notice">
+          <i class="fas fa-file-alt fa-2x text-primary mb-2 d-block" aria-hidden="true"></i>
+          <h3 class="h5">Journal Manuscript</h3>
+          <p class="small text-muted mb-0">Peer-reviewed article formatted for journal submission. Custom callout environments, TikZ figures, journal-compliant section heading sizing, and proper hyperref metadata.</p>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="samples/syllabus.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none" aria-describedby="pdf-notice">
+          <i class="fas fa-list-alt fa-2x text-primary mb-2 d-block" aria-hidden="true"></i>
+          <h3 class="h5">Graduate Syllabus</h3>
+          <p class="small text-muted mb-0">MPA Capstone syllabus with BibTeX reading list, PDF/UA-2 accessibility metadata, and a template maintained cleanly across eight semesters.</p>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="samples/beamer.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none" aria-describedby="pdf-notice">
+          <i class="fas fa-desktop fa-2x text-primary mb-2 d-block" aria-hidden="true"></i>
+          <h3 class="h5">Beamer Lecture Deck</h3>
+          <p class="small text-muted mb-0">45-slide lecture deck on a custom institutional theme. TikZ timelines, two-column layouts, incremental reveals, styled definition blocks, and section dividers.</p>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="samples/cv.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none" aria-describedby="pdf-notice">
+          <i class="fas fa-id-card fa-2x text-primary mb-2 d-block" aria-hidden="true"></i>
+          <h3 class="h5">Academic CV</h3>
+          <p class="small text-muted mb-0">Full academic curriculum vitae — cleanly typeset, logically structured, and easy to update each cycle without touching the formatting.</p>
+        </a>
+      </div>
+    </div>
+
+    <p class="text-center text-muted small mt-4">Client work stays confidential and isn't posted here. These are my own documents — the same tools and approach I bring to every project.</p>
+  </section>
+
+  <section id="why-hire">
+    <h2 class="section-title text-center">Why hire this out?</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <h3 class="h5"><i class="fas fa-robot text-primary me-2" aria-hidden="true"></i>Not an AI job</h3>
+        <p>AI can generate LaTeX that looks right but won't compile, hallucinates BibTeX keys, and breaks journal templates in ways that aren't obvious until submission. Production-ready output requires actual compilation, real debugging, and knowing what editors check. I've seen what happens when dissertations go through ChatGPT for formatting. I'll save you the pain.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h5"><i class="fas fa-clock text-primary me-2" aria-hidden="true"></i>Your time has value</h3>
+        <p>A tenure-track assistant professor spending eight hours fighting an Elsevier template is eight hours not writing the next paper. A PhD student debugging figure placement at midnight before a deadline is not a good use of what's left of their cognitive capacity.</p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="h5"><i class="fas fa-code text-primary me-2" aria-hidden="true"></i>You keep control</h3>
+        <p>Every file comes with comments explaining what does what. You're not locked into a tool, a service, or me. When you need to update it next semester — or next year — you can do it yourself.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="pricing">
     <h2 class="section-title text-center">Pricing</h2>
     <p class="text-center text-muted mb-4">Single-project pricing with clear scope. Every tier includes at least one revision round.</p>
-    <div class="row">
-      <div class="col-md-3">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
         <div class="pricing-card">
-          <h4>Single Document</h4>
+          <h3 class="h4">Single Document</h3>
           <div class="price">$150</div>
           <p class="text-muted">CV, syllabus, or short paper</p>
           <ul class="feature-list">
@@ -196,9 +334,9 @@
           <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="pricing-card">
-          <h4>Standard Article</h4>
+          <h3 class="h4">Standard Article</h3>
           <div class="price">$300</div>
           <p class="text-muted">Short to mid-length manuscripts</p>
           <ul class="feature-list">
@@ -213,10 +351,10 @@
           <a href="#contact" class="btn btn-outline-primary w-100">Get Started</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="pricing-card featured">
           <span class="badge">Most Common</span>
-          <h4>Journal Submission</h4>
+          <h3 class="h4">Journal Submission</h3>
           <div class="price">$500</div>
           <p class="text-muted">Full manuscripts and conference decks</p>
           <ul class="feature-list">
@@ -233,9 +371,9 @@
           <a href="#contact" class="btn btn-primary w-100">Start Project</a>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg-3">
         <div class="pricing-card">
-          <h4>Complex / Book-Chapter Rescue</h4>
+          <h3 class="h4">Complex / Book-Chapter Rescue</h3>
           <div class="price">$750+</div>
           <p class="text-muted">Large or high-complexity projects</p>
           <ul class="feature-list">
@@ -255,9 +393,10 @@
     <div class="text-center mt-4">
       <p><strong>Turnaround:</strong> typical 5–7 days; rush slots limited and priced accordingly.</p>
       <p class="small text-muted mt-2">Contact me to check current availability — turnaround commitments are made at time of quote.</p>
-      
-      <div class="alert alert-light mt-4">
-        <h6><i class="fas fa-info-circle me-2"></i>What else to know</h6>
+      <p class="small text-muted">Payment is invoiced on project acceptance. I can sign an NDA if your institution requires it for unpublished work.</p>
+
+      <div class="pricing-extras-box mt-4">
+        <h3 class="h6"><i class="fas fa-info-circle me-2" aria-hidden="true"></i>What else to know</h3>
         <div class="row">
           <div class="col-md-6">
             <p class="small mb-2"><strong>Extra revisions:</strong> $75 per round beyond what's included</p>
@@ -270,135 +409,178 @@
         </div>
       </div>
     </div>
-    
+
     <div class="cta-section mt-5 p-4 rounded">
       <h3 class="text-center mb-3">Get a quote</h3>
       <div class="text-center">
-        <p class="mb-3">Email <a href="mailto:latex@dadams.io" class="fw-bold text-primary">latex@dadams.io</a> with your document, target journal (if any), and deadline. No long questionnaires. I'll respond within a day with a clear quote and timeline.</p>
+        <p class="mb-3">Email <a href="mailto:latex@dadams.io" class="fw-bold text-primary">latex@dadams.io</a> with your document, target journal (if any), and deadline. No long questionnaires. I'll respond within 24 hours with a clear quote and timeline.</p>
         <a href="mailto:latex@dadams.io" class="btn btn-primary btn-lg">Email Your Details</a>
       </div>
     </div>
   </section>
-  
-  <section id="why-hire">
-    <h2 class="section-title text-center">Why hire this out?</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <h5><i class="fas fa-robot text-muted me-2"></i>Not an AI job</h5>
-        <p>AI-generated LaTeX looks right but often won't compile, hallucinates BibTeX keys, and breaks journal templates in ways that aren't obvious until submission. Production-ready output requires actual compilation, real debugging, and knowing what editors and reviewers check.</p>
-      </div>
-      <div class="col-md-4">
-        <h5><i class="fas fa-clock text-muted me-2"></i>Your time has value</h5>
-        <p>A tenure-track assistant professor spending eight hours fighting an Elsevier template is eight hours not writing the next paper. A PhD student debugging figure placement at midnight before a deadline is not a good use of what's left of their cognitive capacity.</p>
-      </div>
-      <div class="col-md-4">
-        <h5><i class="fas fa-code text-muted me-2"></i>You keep control</h5>
-        <p>Every file comes with comments explaining what does what. You're not locked into a tool, a service, or me. When you need to update it next semester — or next year — you can do it yourself. That's the point.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="case-studies">
-    <h2 class="section-title text-center">Sample Work</h2>
-    <p class="text-center text-muted mb-4">These are my own academic documents. Click any to open the PDF.</p>
-
-    <div class="row g-4">
-      <div class="col-md-3">
-        <a href="samples/manuscript.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none">
-          <i class="fas fa-file-alt fa-2x text-primary mb-2 d-block"></i>
-          <h5>Journal Manuscript</h5>
-          <p class="small text-muted mb-0">Peer-reviewed article formatted for journal submission. Custom callout environments, TikZ figures, journal-compliant section heading sizing, and proper hyperref metadata.</p>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="samples/syllabus.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none">
-          <i class="fas fa-list-alt fa-2x text-primary mb-2 d-block"></i>
-          <h5>Graduate Syllabus</h5>
-          <p class="small text-muted mb-0">MPA Capstone syllabus with BibTeX reading list, PDF/UA-2 accessibility metadata, and a template maintained cleanly across eight semesters.</p>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="samples/beamer.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none">
-          <i class="fas fa-desktop fa-2x text-primary mb-2 d-block"></i>
-          <h5>Beamer Lecture Deck</h5>
-          <p class="small text-muted mb-0">45-slide lecture deck on a custom institutional theme. TikZ timelines, two-column layouts, incremental reveals, styled definition blocks, and section dividers.</p>
-        </a>
-      </div>
-      <div class="col-md-3">
-        <a href="samples/cv.pdf" target="_blank" rel="noopener" class="sample-card text-decoration-none">
-          <i class="fas fa-id-card fa-2x text-primary mb-2 d-block"></i>
-          <h5>Academic CV</h5>
-          <p class="small text-muted mb-0">Full academic curriculum vitae — cleanly typeset, logically structured, and easy to update each cycle without touching the formatting.</p>
-        </a>
-      </div>
-    </div>
-
-    <p class="text-center text-muted small mt-4">Client work stays confidential and isn't posted here. These are my own documents — the same tools and approach I bring to every project.</p>
-  </section>
 
   <section id="faq">
     <h2 class="section-title text-center">Frequently Asked Questions</h2>
-    
-    <div class="row">
-      <div class="col-md-6">
-        <h5>How quickly can you turn around a project?</h5>
-        <p>Standard: 5–7 days. Quick fixes: 24–48 hours. Rush available. All with clear comments.</p>
-        
-        <h5>Do you work with specific journals?</h5>
-        <p>Yes—Elsevier, Springer, IEEE, APA, others. Haven't seen yours? I'll figure it out.</p>
 
-        <h5>Why not just use ChatGPT for this?</h5>
-        <p>AI is useful for drafts and brainstorming. I focus on production-ready output: stable compiles, template compliance, and documents that are ready to share or submit.</p>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqC1" aria-expanded="true" aria-controls="faqC1">
+            How quickly can you turn around a project?
+          </button>
+        </h3>
+        <div id="faqC1" class="accordion-collapse collapse show" aria-labelledby="faqH1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Standard: 5–7 days. Quick fixes (short CV, simple document): 24–48 hours. Rush delivery available at a 50% surcharge — if you're up against a deadline, email me first to confirm I have a slot. All timelines are quoted at the time of scope agreement, not guessed at afterward.
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <h5>What if I need revisions, or want to make changes myself?</h5>
-        <p>One round included. After that, $75 per round if you want me. But since everything's documented, you can often fix things yourself.</p>
-        
-        <h5>Can I easily update the document myself after you're done?</h5>
-        <p>Yes. Every document comes with comments explaining the code. Overleaf or GitHub access. You can tweak, add figures, update text. You're not locked in.</p>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC2" aria-expanded="false" aria-controls="faqC2">
+            Do you work with specific journals?
+          </button>
+        </h3>
+        <div id="faqC2" class="accordion-collapse collapse" aria-labelledby="faqH2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes — Elsevier, Springer, IEEE, APA, Chicago, APSA, and others. I work directly with the journal's official class files and follow their style guide. Haven't seen yours? Send it over. If it has a published template, I can work with it.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC3" aria-expanded="false" aria-controls="faqC3">
+            Why not just use ChatGPT for this?
+          </button>
+        </h3>
+        <div id="faqC3" class="accordion-collapse collapse" aria-labelledby="faqH3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            AI can draft LaTeX — and it's useful for quick experiments. What it can't reliably do: compile a document without errors, maintain formatting consistency across a 40-page manuscript, comply with a specific journal's class file requirements, or handle the edge cases that matter at submission time. AI-generated LaTeX often looks right and breaks during compilation because it hallucinated a package or used a command the journal's class file doesn't support. Production-ready LaTeX requires actual compilation, real debugging, and knowing what editors check for. AI gets you close. I get you there.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC4" aria-expanded="false" aria-controls="faqC4">
+            What if I need revisions, or want to make changes myself?
+          </button>
+        </h3>
+        <div id="faqC4" class="accordion-collapse collapse" aria-labelledby="faqH4" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            One revision round is included in every tier (the Complex tier includes three). After that, additional rounds are $75 each if you want me to handle them. But since everything is documented and commented, you can often make small changes yourself without needing to come back to me at all.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC5" aria-expanded="false" aria-controls="faqC5">
+            Can I update the document myself after you're done?
+          </button>
+        </h3>
+        <div id="faqC5" class="accordion-collapse collapse" aria-labelledby="faqH5" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes. Every document comes with inline comments explaining exactly what each part does. You get the full source — on Overleaf, GitHub, or a zip file, whichever you prefer. You can add text, swap figures, update the bibliography, or adjust formatting without touching anything you don't understand.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC6" aria-expanded="false" aria-controls="faqC6">
+            What about confidentiality? This is unpublished work.
+          </button>
+        </h3>
+        <div id="faqC6" class="accordion-collapse collapse" aria-labelledby="faqH6" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Your documents are never shared, posted, or used for any other purpose. If your institution or department requires it, I'm happy to sign an NDA before you send anything. Client work stays confidential — which is also why the sample section shows my own documents, not client files.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h3 class="accordion-header" id="faqH7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqC7" aria-expanded="false" aria-controls="faqC7">
+            My co-authors work in Word. Can you build a workflow that keeps them there?
+          </button>
+        </h3>
+        <div id="faqC7" class="accordion-collapse collapse" aria-labelledby="faqH7" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes — and I've actually built this. For a Cambridge University Press book, I created a Word → Markdown → LaTeX pipeline using Pandoc and custom Lua filters. All eight chapters were co-authored, with every collaborator writing entirely in Word — including heading structures and index tags — converting cleanly to production-ready LaTeX. Nobody had to open a <code>.tex</code> file. If your collaborators are Word-native, we design a pipeline around how they actually work rather than asking them to learn new tools.
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- TESTIMONIALS — uncomment and fill in quotes when received from co-authors
+  <section id="testimonials">
+    <h2 class="section-title text-center">What collaborators say</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            "[Your words here — what was it like to write the whole book in Word while the LaTeX handled itself?]"
+          </blockquote>
+          <div class="testimonial-attribution">
+            <strong>[Co-author name]</strong><br>
+            <span class="text-muted">Co-author, <em>Cambridge University Press</em></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <blockquote class="testimonial-quote">
+            "[Your words here — focused on the experience of collaborating across the project and what you'd tell someone considering working with David.]"
+          </blockquote>
+          <div class="testimonial-attribution">
+            <strong>[Co-author name]</strong><br>
+            <span class="text-muted">Co-author, <em>Cambridge University Press</em></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
   <section id="contact">
     <h2 class="section-title text-center">Ready to move forward?</h2>
-    
+
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="contact-form">
-          <h4 class="text-center mb-4">Tell me about your project</h4>
-          
-          <form action="https://formspree.io/f/xdalqddk" method="POST">
+          <h3 class="h4 text-center mb-4">Tell me about your project</h3>
+
+          <p class="small text-muted mb-3" id="required-note">Fields marked <strong>*</strong> are required.</p>
+
+          <form id="contactForm" action="https://formspree.io/f/xdalqddk" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New LaTeX Project Inquiry">
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="name" class="form-label">Name *</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <label for="name" class="form-label">Name <span aria-hidden="true">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" required autocomplete="name">
               </div>
               <div class="col-md-6 mb-3">
-                <label for="email" class="form-label">Email *</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <label for="email" class="form-label">Email <span aria-hidden="true">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
               </div>
             </div>
-            
+
             <div class="row">
               <div class="col-md-6 mb-3">
-                <label for="institution" class="form-label">Institution</label>
-                <input type="text" class="form-control" id="institution" name="institution">
+                <label for="institution" class="form-label">Institution <span class="text-muted">(optional)</span></label>
+                <input type="text" class="form-control" id="institution" name="institution" autocomplete="organization">
               </div>
               <div class="col-md-6 mb-3">
                 <label for="timeline" class="form-label">Timeline</label>
                 <select class="form-select" id="timeline" name="timeline">
                   <option value="">Select timeline</option>
-                  <option value="rush">Rush (1-3 days)</option>
-                  <option value="standard">Standard (1-2 weeks)</option>
+                  <option value="rush">Rush (48-hour delivery)</option>
+                  <option value="standard">Standard (5–7 days)</option>
                   <option value="flexible">Flexible (2+ weeks)</option>
                 </select>
               </div>
             </div>
-            
+
             <div class="mb-3">
-              <label for="project-type" class="form-label">Project Type *</label>
+              <label for="project-type" class="form-label">Project Type <span aria-hidden="true">*</span></label>
               <select class="form-select" id="project-type" name="project_type" required>
                 <option value="">Select project type</option>
                 <option value="single">Single Document — CV, syllabus, short paper ($150)</option>
@@ -408,30 +590,46 @@
                 <option value="custom">Custom Project</option>
               </select>
             </div>
-            
+
             <div class="mb-3">
-              <label for="description" class="form-label">Project Description *</label>
-              <textarea class="form-control" id="description" name="description" rows="4" placeholder="Describe your document, any special requirements, target journal, etc." required></textarea>
+              <label for="description" class="form-label">Project Description <span aria-hidden="true">*</span></label>
+              <textarea class="form-control" id="description" name="description" rows="4"
+                placeholder="E.g.: 28-page manuscript targeting JPART, need Elsevier template, deadline in 10 days" required></textarea>
             </div>
-            
+
+            <div aria-live="polite" aria-atomic="true" id="form-status" class="visually-hidden"></div>
+
             <div class="text-center">
-              <button type="submit" class="btn btn-primary btn-lg">
-                <i class="fas fa-paper-plane"></i> Send Your Info
+              <button type="submit" id="submitBtn" class="btn btn-primary btn-lg">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i> Request a Quote
               </button>
               <p class="small text-muted mt-2">You'll get a clear quote within 24 hours. No pressure, no spam.</p>
             </div>
           </form>
+
+          <div id="form-success" class="alert alert-success mt-3 d-none" role="alert">
+            <i class="fas fa-check-circle me-2" aria-hidden="true"></i>
+            <strong>Sent.</strong> You'll hear back within 24 hours with a clear quote.
+          </div>
+          <div id="form-error" class="alert alert-danger mt-3 d-none" role="alert">
+            <i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>
+            <strong>Something went wrong.</strong> Try emailing
+            <a href="mailto:latex@dadams.io" class="alert-link">latex@dadams.io</a> directly.
+          </div>
         </div>
       </div>
     </div>
-    
+
     <div class="text-center mt-4">
       <p><strong>Not sure where to start?</strong> Email <a href="mailto:latex@dadams.io">latex@dadams.io</a> with your document and deadline. No questionnaire. No sales pitch. Just a real assessment and a clear quote within 24 hours.</p>
-      <p class="small text-muted mt-3">I'm an Associate Professor of Public Administration at Cal State Fullerton and a published researcher. I take on select LaTeX projects because academic formatting shouldn't be a barrier to good work getting published. I know the full publishing pipeline—from drafting to submission to proofs. I get the real constraints you're working under: funding delays, advisor revisions at the last minute, three time zones in your co-author list. <a href="https://dadams.io">View my full profile.</a></p>
     </div>
   </section>
 
-  <footer>
+</div><!-- /.container -->
+</main>
+
+<footer>
+  <div class="container">
     <div class="row">
       <div class="col-md-8">
         <p class="mb-0">&copy; 2026 David Prescott Adams, Ph.D. <a href="https://dadams.io" class="text-muted">Full profile</a>.</p>
@@ -443,43 +641,119 @@
         <a href="mailto:latex@dadams.io" class="text-muted" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
       </div>
     </div>
-  </footer>
-</div>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-  // Smooth scrolling for navigation links
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  // ── Smooth scroll with sticky-navbar offset ──────────────────────────────
+  document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if (href === '#') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+      const target = document.querySelector(href);
       if (target) {
-        target.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-        });
+        const navbar = document.querySelector('.navbar.sticky-top');
+        const offset = navbar ? navbar.getBoundingClientRect().height : 0;
+        const top = target.getBoundingClientRect().top + window.scrollY - offset - 8;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+        // Move focus for keyboard/screen reader users
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
       }
     });
   });
 
-  // Render LaTeX
-  document.addEventListener("DOMContentLoaded", function() {
-    renderMathInElement(document.body, {
-      delimiters: [
-        {left: "$$", right: "$$", display: true},
-        {left: "$", right: "$", display: false},
-        {left: "\\(", right: "\\)", display: false},
-        {left: "\\[", right: "\\]", display: true}
-      ]
-    });
+  // ── KaTeX render (after all deferred scripts have loaded) ─────────────────
+  window.addEventListener('load', function () {
+    if (typeof renderMathInElement === 'function') {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: '$$', right: '$$',   display: true  },
+          { left: '$',  right: '$',    display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true  }
+        ],
+        throwOnError: false
+      });
+    }
   });
 
-  // Add loading animation to form
-  document.querySelector('form').addEventListener('submit', function(e) {
-    const button = this.querySelector('button[type="submit"]');
-    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    button.disabled = true;
+  // ── Contact form: AJAX submit with success/error feedback ─────────────────
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const form        = this;
+    const button      = document.getElementById('submitBtn');
+    const statusEl    = document.getElementById('form-status');
+    const successEl   = document.getElementById('form-success');
+    const errorEl     = document.getElementById('form-error');
+    const originalHTML = button.innerHTML;
+
+    button.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending…';
+    button.disabled  = true;
+    successEl.classList.add('d-none');
+    errorEl.classList.add('d-none');
+    statusEl.textContent = 'Submitting your project inquiry. Please wait.';
+
+    fetch(form.action, {
+      method:  'POST',
+      body:    new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(function (res) {
+        if (res.ok) {
+          form.reset();
+          successEl.classList.remove('d-none');
+          statusEl.textContent = 'Your inquiry was sent successfully.';
+          successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          return res.json().then(function (data) {
+            throw new Error(data.error || 'Submission failed');
+          });
+        }
+      })
+      .catch(function () {
+        errorEl.classList.remove('d-none');
+        statusEl.textContent = 'There was an error sending your inquiry. Please try again or email directly.';
+        button.innerHTML = originalHTML;
+        button.disabled  = false;
+      });
   });
+
+  // ── Active nav link on scroll via IntersectionObserver ────────────────────
+  (function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href^="#"]');
+    const sections = Array.from(navLinks)
+      .map(function (link) { return document.querySelector(link.getAttribute('href')); })
+      .filter(Boolean);
+
+    const navbarHeight = (document.querySelector('.navbar.sticky-top') || {}).offsetHeight || 64;
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function (link) { link.classList.remove('active'); });
+            const active = document.querySelector(
+              '.navbar-nav .nav-link[href="#' + entry.target.id + '"]'
+            );
+            if (active) active.classList.add('active');
+          }
+        });
+      },
+      {
+        rootMargin: '-' + (navbarHeight + 4) + 'px 0px -55% 0px',
+        threshold: 0
+      }
+    );
+
+    sections.forEach(function (section) { observer.observe(section); });
+  })();
 </script>
 
 </body>
