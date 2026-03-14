@@ -510,6 +510,48 @@ section:focus-visible {
   margin-top: auto;
 }
 
+/* ── "Who this is for" quick-scan list ──────────────────────────────────── */
+.who-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 1.5rem;
+}
+
+.who-list li {
+  padding: 0.3rem 0 0.3rem 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+  break-inside: avoid;
+}
+
+.who-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--brand-green);
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  .who-list {
+    columns: 1;
+  }
+}
+
+/* ── Social proof micro-quotes near pricing ────────────────────────────── */
+.social-proof-strip {
+  padding: 0.5rem 0;
+}
+
+.micro-quote {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
 /* ── Reduced motion: remove translate animations for vestibular safety ───── */
 @media (prefers-reduced-motion: reduce) {
   .cta-button,
