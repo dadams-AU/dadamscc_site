@@ -402,3 +402,48 @@ This costs 30 minutes/week, compounds over time, positions you as the go-to pers
 ---
 
 *Plan synthesized March 2026 from analyses by Growth Hacker, Content Creator, Twitter Engager, Trend Researcher, and Social Media Strategist agents.*
+
+--
+  Tweet 1:
+  Last year I typeset an 8-chapter book for Cambridge University Press.
+
+  My two co-authors never opened a LaTeX file. Not once.
+
+  Here is how we did it — and why it matters for any academic who thinks LaTeX is "not for them."
+
+  🧵
+
+  Tweet 2:
+  The problem: Cambridge UP wanted camera-ready LaTeX. My co-authors write in Word. They were not going to learn a markup language for one book.
+
+  I was not going to manually convert 8 chapters of Word into LaTeX by hand.
+
+  Tweet 3:
+  The solution: I built a pipeline.
+  Word → Markdown (via Pandoc) → LaTeX (via custom Lua filters).
+
+  Co-authors kept writing in Word. They used heading structures and index tags like normal. The pipeline handled the rest.
+
+  Tweet 4:
+  The result:
+  - Camera-ready LaTeX output that met CUP standards
+  - Co-authors never changed their workflow
+  - Both said they would do it again
+  - The book is published and in print
+
+  Tweet 5:
+  The lesson for academics:
+
+  You do not need to learn LaTeX to get LaTeX-quality output. You need someone who understands both worlds — Word and LaTeX — and can bridge them.
+
+  That is what I do at latex.dadams.io.
+
+  Tweet 6:
+  If you are a researcher, grad student, or faculty member who needs professional typesetting but does not want to learn LaTeX:
+
+  I get it. I built an entire pipeline so my co-authors would not have to.
+
+  DM me or visit latex.dadams.io for a free quote.
+
+  ---
+  Pin that thread and you're off to the races.
