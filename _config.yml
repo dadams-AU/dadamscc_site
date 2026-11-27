@@ -1,0 +1,15 @@
+# Jekyll (GitHub Pages) build settings.
+# The site is plain static HTML; this file only keeps working files
+# out of the published site. Anything listed here is not served.
+exclude:
+  - README.md
+  - MARKETING_PLAN.md
+  - latex-services-cms/
+  - logo.tex
+  - logo.aux
+  - logo.log
+  - logo.fls
+  - logo.fdb_latexmk
+  - logo.synctex.gz
+  - logo.pdf
+  - dadams.png.backup
